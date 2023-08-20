@@ -1,0 +1,65 @@
+#header {
+  max-width: 1170px;
+  margin: 0 auto;
+  font-family: 'Inter', sans-serif;
+
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0;
+    border-bottom: 1px solid #EAEAEA;
+
+    .logo {
+      width: 200px;
+    }
+  
+    .logo img {
+      width: 100%;
+    }
+
+    .contact-box {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      align-items: center;
+      gap: 1rem;
+
+      .contact {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        border-right: 1px solid #EAEAEA;
+        padding-right: 1rem;
+
+        &-icon {
+          width: 32px;
+        }
+
+        &-icon img {
+          width: 100%;
+        }
+
+        &-title {
+          font-weight: var(--topic-font-weight);
+          color: var(--primary-color);
+          line-height: 2;
+        }
+
+        &-description {
+          font-weight: 400;
+          color: var(--p-text-color);
+        }
+      }
+
+      .btn-appoinment {
+        text-decoration: none;
+        margin: 0 auto;
+        background: var(--primary-color);
+        color: #fff;
+        padding: 15px 30px;
+        border-radius: 50px;
+        font-size: 14px;
+        font-weight: 500;
+      }
+    }
+  }
+}

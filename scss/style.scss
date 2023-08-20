@@ -1,0 +1,14 @@
+@import './header.scss';
+
+:root {
+  --primary-color: #000E44;
+  --secondary-color: #00E5CC;
+  --p-text-color: #848E9F;
+  --topic-font-weight: 600;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
