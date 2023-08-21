@@ -1,11 +1,13 @@
 @import './header.scss';
 @import './navbar.scss';
+@import './landing-page.scss';
 
 :root {
   --primary-color: #000E44;
   --secondary-color: #00E5CC;
   --p-text-color: #848E9F;
   --topic-font-weight: 600;
+  --max-width: 1170px;
 }
 
 * {
