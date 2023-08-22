@@ -1,9 +1,9 @@
-#header {
+#header-wrap {
   max-width: var(--max-width);
   margin: 0 auto;
   font-family: 'Inter', sans-serif;
 
-  .header-wrap {
+  .header {
     display: flex;
     justify-content: space-between;
     padding: 25px 0;
@@ -17,13 +17,13 @@
       width: 100%;
     }
 
-    .contact-box {
+    .contact {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       align-items: center;
       gap: 1rem;
 
-      .contact {
+      .contact-box {
         display: flex;
         align-items: center;
         gap: 1rem;

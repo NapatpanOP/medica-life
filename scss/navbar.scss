@@ -3,7 +3,7 @@
   margin: 0 auto;
   font-family: 'Inter', sans-serif;
 
-  .nav-wrap {
+  .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -17,7 +17,7 @@
       display: none;
     }
 
-    .nav-menu {
+    &-menu {
       display: flex;
       gap: 3rem;
       align-items: center;
@@ -74,13 +74,13 @@
       }
     }
 
-    .nav-icons {
+    &-icons {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       grid-gap: 0.7rem;
     }
 
-    .nav-icons a{
+    &-icons a{
       background: var(--secondary-color);
       color: #fff;
       font-size: 16px;
@@ -88,7 +88,7 @@
       border-radius: 50px;
     }
 
-    .nav-icons a:hover {
+    &-icons a:hover {
       background: var(--primary-color);
       scale: (0.9);
       transition: all .4s ease-out;
