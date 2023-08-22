@@ -11,10 +11,10 @@
 
     .logo {
       width: 200px;
-    }
-  
-    .logo img {
-      width: 100%;
+
+      img {
+        width: 100%;
+      }
     }
 
     .contact {
@@ -32,10 +32,10 @@
 
         &-icon {
           width: 32px;
-        }
 
-        &-icon img {
-          width: 100%;
+          img {
+            width: 100%;
+          }
         }
 
         &-title {
