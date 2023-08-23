@@ -14,7 +14,7 @@
     background-size: auto;
     opacity: 0.3;
     transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
-    z-index: -1;
+    z-index: -3;
   }
 
   .services {
@@ -39,35 +39,64 @@
       text-align: center;
     }
 
-    p {
-      color: var(--p-text-color);
-      font-size: 16px;
-      font-weight: 300;
-      max-width: 600px;
+    &-description {
+      display: grid;
+      justify-content: center;
       margin-bottom: 2rem;
+
+      p {
+        color: var(--p-text-color);
+        font-size: 16px;
+        font-weight: 300;
+        max-width: 600px;
+        margin-bottom: 2rem;
+        text-align: center;
+        line-height: 1.5rem;
+      }
     }
 
     &-box {
       display: flex;
       flex-wrap: wrap;
-      gap: 2rem;
+      gap: 2.5rem;
       
-      &-row {
-        display: grid;
-        grid-gap: 2rem;
+      &-column {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2.5rem;
+        // height: 40vh;
+        position: relative;
+
+        .top {
+          top: 2.5rem;
+        }
+
+        .color {
+          background: var(--primary-color);
+          
+          h3 {
+            color: #FFFFFF;
+          }
+        }
 
         &-card {
+          position: relative;
           text-align: left;
-          background-color: #FFFFFF;
+          background: #FFFFFF;
           padding: 30px;
           box-shadow: 0px 5px 40px 0px rgba(0, 229, 204.00000000000006, 0.11);
           border-style: solid;
-          border-width: 0px 0px 0px 0px;
-          border-radius: 5px 5px 5px 5px;
+          border-radius: 5px;
+          // height: max-content;
+          transition: all .6s ease;
+          overflow: hidden;
+          z-index: 1;
+  
 
           &-icon {
-            width: 60px;
-            margin-bottom: 1rem;
+            width: 55px;
+            height: 55px;
+            margin-bottom: 1.5rem;
 
             img {
               width: 100%;
@@ -97,12 +126,44 @@
             font-size: 14px;
             display: flex;
             align-items: center;
-            gap: 1rem;
+            gap: 10px;
 
             img {
-              width: 15px;
+              width: 12px;
             }
           }
+        }
+
+        &-card:hover {
+          // background: var(--primary-color);
+          // transition: all .6s ease;
+          h3 {
+            color: #FFFFFF;
+          }
+        }
+
+        &-card::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 0;
+          height: 100%;
+          width: 100%;
+          background: var(--primary-color);
+          z-index: -1;
+
+          transition: all .4s ease;
+          transform: scaleY(0);
+          transform-origin: bottom;
+          transition: transform 0.4s cubic-bezier(1.5, 1.6, 0.4, 0.7);
+          transition-timing-function: cubic-bezier(1.5, 1.6, 0.4, 0.7);
+          opacity: .4;
+        }
+
+        &-card:hover::after {
+          transform: scaleY(1);
+          transform-origin: bottom;
+          opacity: 1;
         }
       }
     }
