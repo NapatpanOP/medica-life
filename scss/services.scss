@@ -3,7 +3,7 @@
   // margin: 0 auto;
   font-family: 'Inter', sans-serif;
   background-color: #ECFDFB;
-  // position: relative;
+  position: relative;
   display: grid;
   justify-content: center;
   align-items: center;
@@ -12,16 +12,16 @@
     background-image: url(https://kit.baliniz.com/hymedical/wp-content/uploads/sites/10/2021/07/bg-health.jpg);
     background-position: center center;
     background-size: auto;
-    opacity: 0.3;
+    opacity: .3;
     transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
-    z-index: -3;
+    z-index: -2;
   }
 
   .services {
     position: relative;
     max-width: var(--max-width);
     padding: 100px 0;
-    z-index: 0;
+    z-index: 1;
 
     h5 {
       color: var(--secondary-color);
@@ -59,6 +59,7 @@
       display: flex;
       flex-wrap: wrap;
       gap: 2.5rem;
+      margin-bottom: 130px;
       
       &-column {
         display: flex;
@@ -90,8 +91,7 @@
           // height: max-content;
           transition: all .6s ease;
           overflow: hidden;
-          z-index: 1;
-  
+          z-index: 0;  
 
           &-icon {
             width: 55px;
@@ -135,8 +135,6 @@
         }
 
         &-card:hover {
-          // background: var(--primary-color);
-          // transition: all .6s ease;
           h3 {
             color: #FFFFFF;
           }
@@ -164,6 +162,79 @@
           transform: scaleY(1);
           transform-origin: bottom;
           opacity: 1;
+        }
+      }
+    }
+
+    &-appointment {
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid #EAEAEA;
+      padding-top: 100px;
+
+      &-description {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+
+        &-img {
+          width: 40px;
+  
+          img {
+            width: 100%;
+          }
+        }
+
+        h3 {
+          font-size: 24px;
+          font-weight: 600;
+          color: var(--primary-color);
+          margin-bottom: 10px;
+        }
+        
+        p {
+          font-size: 16px;
+          font-weight: 300;
+          line-height: 2rem;
+          color: var(--p-text-color);
+        }
+
+        &-btn {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+
+          .btn-appointment {
+            text-decoration: none;
+            color: #FFFFFF;
+            font-size: 14px;
+            font-weight: 500;
+            padding: 18px 32px;
+            border-radius: 50px;
+            background: var(--secondary-color);
+          }
+
+          .btn-services {
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            color: var(--secondary-color);
+            font-size: 14px;
+            font-weight: 500;
+            gap: 1rem;
+            
+            img {
+              width: 13px;
+            }
+          }
+
+          .btn-appointment:hover, .btn-services:hover {
+            transform: translateY(-8px);
+            transition: all .3s ease-out;
+          }
         }
       }
     }
