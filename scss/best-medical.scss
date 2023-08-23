@@ -1,0 +1,163 @@
+#best-medical-wrap {
+  // margin: 0 auto;
+  font-family: 'Inter', sans-serif;
+  background-color: #000A31;
+  position: relative;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+
+  .best-background-overlay {
+    background-image: url(https://kit.baliniz.com/hymedical/wp-content/uploads/sites/10/2021/07/bg-health-2.jpg);
+    background-position: bottom center;
+    background-repeat: repeat;
+    background-size: cover;
+    opacity: 0.15;
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+    position: relative;
+  }
+
+  .best-medical {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6rem;
+    padding: 100px 0;
+    max-width: var(--max-width);
+
+    &-description {
+      max-width: 585px;
+      display: grid;
+      gap: 1rem;
+
+      h5 {
+        font-size: 18px;
+        font-weight: 500;
+        color: var(--secondary-color);
+      }
+
+      h2 {
+        color: #FFFFFF;
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 3rem;
+        max-width: 510px;
+      }
+
+      p {
+        color: #FFFFFF;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.5rem;
+        margin-bottom: 1.5rem;
+        max-width: 510px;
+      }
+
+      a {
+        text-decoration: none;
+        color: #FFFFFF;
+        background-color: var(--secondary-color);
+        padding: 18px 32px;
+        border-radius: 50px;
+        width: fit-content;
+        height: fit-content;
+      }
+
+      a:hover {
+        transform: translateY(-8px);
+        transition: all .3s ease-out;
+      }
+    }
+
+    &-box {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 1.5rem;
+
+      .bg-color-white {
+        background: #FFFFFF;
+
+        h3 {
+          color: var(--primary-color);
+        }
+      }
+
+      .bg-color-green {
+        background: var(--secondary-color);
+
+        h3 {
+          color: #FFFFFF;
+        }
+      }
+
+      &-card {
+        position: relative;
+        background: none;
+        padding: 28px;
+        text-align: left;
+        border: 1px solid #434D75;
+        border-radius: 5px;
+        transition: all .6s ease;
+        overflow: hidden;
+        z-index: 0;  
+
+        &-img {
+          width: 45px;
+          margin-bottom: 1rem;
+
+          img {
+            width: 100%;
+          }
+        }
+
+        h3 {
+          max-width: 210px;
+          color: #FFFFFF;
+          font-size: 18px;
+          font-weight: 600;
+          line-height: 1.4rem;
+          margin-bottom: 10px;
+        }
+
+        .icon {
+          font-size: 45px;
+          color: #FFFFFF;
+          margin-bottom: 1rem;
+        }
+      }
+
+      &-card:hover {
+        h3 {
+          color: var(--primary-color);
+        }
+
+        .icon {
+          color: var(--secondary-color);
+        }
+      }
+
+      &-card::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background: #FFFFFF;
+        z-index: -1;
+
+        transition: all .4s ease;
+        transform: scaleY(0);
+        transform-origin: bottom;
+        transition: transform 0.4s cubic-bezier(1.5, 1.6, 0.4, 0.7);
+        transition-timing-function: cubic-bezier(1.5, 1.6, 0.4, 0.7);
+        opacity: .4;
+      }
+
+      &-card:hover::after {
+        transform: scaleY(1);
+        transform-origin: bottom;
+        opacity: 1;
+      }
+    }
+  }
+}
