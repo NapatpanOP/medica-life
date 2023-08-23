@@ -1,0 +1,121 @@
+#work-wrap {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  font-family: 'Inter', sans-serif;
+
+  .work {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 100px 0;
+    position: relative;
+
+    &-description {
+      max-width: 585px;
+      display: grid;
+      grid-gap: 1rem;
+
+      h5 {
+        font-size: 18px;
+        font-weight: 500;
+        color: var(--secondary-color);
+      }
+
+      h2 {
+        font-size: 32px;
+          font-weight: 600;
+          line-height: 2.3rem;
+          color: var(--primary-color);
+      }
+
+      p {
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.4rem;
+        color: var(--p-text-color);
+      }
+
+      &-process {
+        display: grid;
+        grid-gap: 1rem;
+        margin-top: 1rem;
+        position: relative;
+
+        &-box {
+          display: grid;
+          grid-template-columns: repeat(1, 0.2fr 1fr);
+          align-items: center;
+          z-index: 2;
+
+          &-img {
+            padding: 15px;
+            border-radius: 5px;
+            height: 65px;
+            width: 65px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: var(--secondary-color);
+
+            img {
+              width: 100%;
+            }
+          }
+
+          &-text {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+
+            h3 {
+              font-size: 20px;
+              font-weight: 600;
+              color: var(--primary-color);
+            }
+          }
+        }
+      }
+
+      &-process::before {
+        content: "";
+        border: 2px solid #BEFFF8;
+        position: absolute;
+        top: 12px;
+        bottom: 10px;
+        left: 33px;
+        z-index: 1;
+      }
+    }
+
+    &-img {
+      max-width: 585px;
+      position: relative;
+      display: grid;
+      left: 6.4rem;
+
+      &-group {
+        width: 82%;
+        border-radius: 5px 5px 5px 5px;
+        box-shadow: -55px 20px 0px 1px rgba(0, 229, 204.00000000000006, 0.17);
+
+        img {
+          width: 100%;
+        }
+      }
+
+      &-team {
+        width: 52%;
+        border-style: solid;
+        border-width: 15px 15px 0px 0px;
+        border-color: #FFFFFF;
+        border-radius: 0px 5px 0px 5px;
+        margin-top: -187px;
+        margin-left: -90px;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+  }
+}
