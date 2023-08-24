@@ -65,9 +65,22 @@
       grid-template-rows: repeat(1, 0.3fr 1fr);
       max-width: 225px;
 
-      h4 {
-        font-size: 18px;
-        font-weight: 600;
+      &-topic {
+        display: grid;
+        align-items: center;
+
+        h4 {
+          font-size: 18px;
+          font-weight: 600;
+          margin-bottom: 2rem;
+        }
+
+        &-line {
+          border-bottom: 2px solid var(--secondary-color);
+          width: 60px;
+          margin-bottom: 2rem;
+        }
+
       }
 
       ul {
@@ -94,12 +107,23 @@
     &-appointment {
       display: flex;
       flex-direction: column;
-      gap: 3rem;
 
-      h4 {
-        color: #fff;
-        font-size: 18px;
-        font-weight: 600;
+      &-topic {
+        display: grid;
+        align-items: center;
+
+        h4 {
+          color: #fff;
+          font-size: 18px;
+          font-weight: 600;
+          margin-bottom: 2rem;
+        }
+
+        &-line {
+          border-bottom: 2px solid var(--secondary-color);
+          width: 60px;
+          margin-bottom: 2rem;
+        }
       }
 
       &-call {
@@ -110,6 +134,7 @@
         border-radius: 5px;
         justify-content: center;
         align-items: center;
+        margin-bottom: 2rem;
 
         &-img {
           width: 55px;
