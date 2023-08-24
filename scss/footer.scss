@@ -49,6 +49,13 @@
           font-size: 20px;
           color: #fff;
         }
+
+        a:hover {
+          background: #fff;
+          color: var(--secondary-color);
+          scale: (0.9);
+          transition: all .4s ease-out;
+        }
       }
     }
 
@@ -56,7 +63,7 @@
       color: #fff;
       display: grid;
       grid-template-rows: repeat(1, 0.3fr 1fr);
-      max-width: 227.86px;
+      max-width: 225px;
 
       h4 {
         font-size: 18px;
@@ -76,7 +83,7 @@
       }
 
       &-icon {
-        width: 13px;
+        width: 15px;
 
         img {
           width: 100%;
