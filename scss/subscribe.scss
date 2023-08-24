@@ -1,0 +1,93 @@
+#subscribe-wrap {
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-image: url(https://kit.baliniz.com/hymedical/wp-content/uploads/sites/10/2021/06/team-of-experienced-medical-staff-e1623252381361.jpg);
+  background-position: 0px 81%;
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px rgba(0, 5, 25, 0.86);
+
+  .subscribe {
+    max-width: var(--max-width);
+    padding: 100px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9.795rem;
+    justify-content: space-between;
+
+    &-description {
+      display: flex;
+      gap: 1.5rem;
+
+      &-img {
+        width: 40px;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      &-text {
+        h3 {
+          color: #fff;
+          font-size: 24px;
+          font-weight: 600;
+          margin-bottom: 1rem;
+        }
+
+        p {
+          font-size: 16px;
+          font-weight: 300;
+          color: #D0D0D2;
+          line-height: 1.5rem;
+          max-width: 500px;
+        }
+      }
+    }
+
+    &-input {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      input {
+        width: 300px;
+        padding: 22px 20px;
+        padding-right: 0;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+        background-color: #ffffff;
+        border: none;
+        outline: none;
+      }
+
+      ::placeholder {
+        color: #bcbcbc;
+        font-family: 'Inter', sans-serif;
+        font-size: 14px;
+      }
+
+      &-submit {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #ffffff;
+        padding: 8px 10px;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        border: none;
+
+        button {
+          background: var(--secondary-color);
+          border: none;
+          color: #ffffff;
+          border-radius: 50px;
+          padding: 14px 35px;
+          justify-content: right;
+        }
+      }
+    }
+  }
+}
