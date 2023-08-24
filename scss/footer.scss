@@ -1,0 +1,144 @@
+#footer-wrap {
+  font-family: 'Inter', sans-serif;
+  background-color: #000B29;
+  position: relative;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+
+  .footer {
+    position: relative;
+    max-width: var(--max-width);
+    padding-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    &-description {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      &-img {
+        width: 235px;
+        
+        img {
+          width: 100%;
+          position: relative;
+        }
+      }
+
+      p {
+        color: var(--p-text-color);
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.5rem;
+        max-width: 290px;
+      }
+
+      &-icons {
+        display: flex;
+        gap: 1rem;
+
+        a {
+          background: var(--secondary-color);
+          height: fit-content;
+          padding: 10px;
+          border-radius: 50%;
+          font-size: 20px;
+          color: #fff;
+        }
+      }
+    }
+
+    &-list {
+      color: #fff;
+      display: grid;
+      grid-template-rows: repeat(1, 0.3fr 1fr);
+      grid-gap: 2rem;
+
+      h4 {
+        font-size: 18px;
+        font-weight: 600;
+      }
+
+      ul {
+        display: grid;
+        gap: 1.5rem;
+      }
+
+      li {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+      }
+
+      &-icon {
+        width: 13px;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    &-appointment {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+
+      h4 {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 600;
+      }
+
+      &-call {
+        display: flex;
+        width: max-content;
+        background-color: #000E45;
+        padding: 30px;
+        border-radius: 5px;
+        justify-content: center;
+        align-items: center;
+
+        &-img {
+          width: 55px;
+          height: max-content;
+          background-color: #00E5CC;
+          padding: 15px;
+          border-radius: 5px;
+          margin-right: 1rem;
+
+          img {
+            width: 100%;
+          }
+        }
+
+        &-text {
+          display: grid;
+          grid-gap: 1rem;
+
+          h3 {
+            color: #fff;
+            font-size: 18px;
+            font-weight: 600;
+          }
+
+          p {
+            color: #A4AEBE;
+            font-size: 16px;
+            font-weight: 400;
+          }
+        }
+      }
+
+      p {
+        max-width: 290px;
+        font-size: 16px;
+        font-weight: 300;
+        color: #848E9F;
+      }
+    }
+  }
+}
