@@ -1,20 +1,15 @@
 #best-medical-wrap {
   font-family: 'Inter', sans-serif;
-  background-color: #000A31;
   position: relative;
   display: grid;
   justify-content: center;
   align-items: center;
-
-  .best-background-overlay {
-    background-image: url(https://kit.baliniz.com/hymedical/wp-content/uploads/sites/10/2021/07/bg-health-2.jpg);
-    background-position: bottom center;
-    background-repeat: repeat;
-    background-size: cover;
-    opacity: 0.15;
-    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
-    position: relative;
-  }
+  background-image: url(https://kit.baliniz.com/hymedical/wp-content/uploads/sites/10/2021/07/bg-health-2.jpg);
+  background-position: bottom center;
+  background-repeat: repeat;
+  background-size: cover;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+  box-shadow: inset 0 0 0 2000px rgba(0, 10, 49, 0.9);
 
   .best-medical {
     display: flex;
