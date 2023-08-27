@@ -114,3 +114,11 @@
       }
     }
 }
+
+@media only screen and (max-width: 1170px) {
+  #landing-page {
+    .background-overlay {
+      height: 80vh;
+    }
+  }
+}

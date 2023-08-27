@@ -5,7 +5,7 @@
 
   .about {
     display: flex;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     padding: 100px 0;
 
     .img-medicalife {
@@ -119,5 +119,11 @@
         transition: all .3s ease-out;
       }
     }
+  }
+}
+
+@media only screen and (max-width: 1170px){
+  #about-wrap {
+   padding: 0 20px;
   }
 }
