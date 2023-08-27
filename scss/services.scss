@@ -247,3 +247,30 @@
    }
   }
 }
+
+@media only screen and (max-width: 1070px) {
+  #services-wrap {
+
+    .services {
+
+      &-box { 
+
+        &-column {
+          justify-content: center;
+          
+          &-card p {
+            max-width: none;
+          }
+
+          .top {
+            top: 0;
+          }
+        }
+      }
+
+      &-appointment {
+        padding: 100px 50px;
+      }
+    }
+  }
+}

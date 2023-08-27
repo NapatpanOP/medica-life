@@ -139,3 +139,22 @@
     }
   }
 }
+
+@media only screen and (max-width: 1070px) {
+  #appointment-wrap {
+    background: linear-gradient(0deg, rgba(255,255,255,1) 71%, rgba(0,10,49,1) 71%);
+
+    .appointment {
+      justify-content: center;
+
+      &-img {
+        width: 80vw;
+        height: 80vh;
+      }
+
+      &-form {
+        width: 80vw;
+      }
+    }
+  }
+}

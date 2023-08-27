@@ -161,3 +161,11 @@
     padding: 0 20px;
   }
 }
+
+@media only screen and (max-width: 1070px) {
+  #best-medical-wrap {
+    .best-medical {
+      display: grid;
+    }
+  }
+}

@@ -107,3 +107,16 @@
     padding: 0 20px;
   }
 }
+
+@media only screen and (max-width: 1070px) {
+  #blog-wrap {
+
+    .blog {
+
+      &-box {
+        display: grid;
+        justify-content: center;
+      }
+    }
+  }
+}

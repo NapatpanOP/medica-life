@@ -122,8 +122,19 @@
   }
 }
 
-@media only screen and (max-width: 1170px){
+@media only screen and (max-width: 1170px) {
   #about-wrap {
    padding: 0 20px;
+  }
+}
+
+@media only screen and (max-width: 1070px) {
+  #about-wrap {
+    .about {
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+    }
   }
 }
