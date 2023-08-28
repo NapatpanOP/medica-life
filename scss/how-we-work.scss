@@ -5,7 +5,9 @@
 
   .work {
     display: flex;
-    // flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     padding: 100px 0;
     position: relative;
 
@@ -132,7 +134,16 @@
     .work {
       display: grid;
       justify-content: center;
+      align-items: center;
       gap: 2rem;
+
+      &-description {
+        max-width: 700px;
+      }
+
+      &-img {
+        max-width: 700px;
+      }
     }
   }
 }

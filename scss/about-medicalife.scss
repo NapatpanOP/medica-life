@@ -4,8 +4,10 @@
   font-family: 'Inter', sans-serif;
 
   .about {
-    display: flex;
+    // display: flex;
     // flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     padding: 100px 0;
 
     .img-medicalife {
@@ -131,10 +133,28 @@
 @media only screen and (max-width: 1070px) {
   #about-wrap {
     .about {
-      display: grid;
+      display: flex;
+      flex-wrap: wrap;
       justify-content: center;
       align-items: center;
       gap: 2rem;
+
+      .img-medicalife {
+        max-width: 700px;
+        // display: contents;
+
+        &-team {
+          width: 65vw;
+        }
+
+        &-doctor {
+          width: 50vw;
+        }
+      }
+
+      &-description {
+        max-width: 700px;
+      }
     }
   }
 }

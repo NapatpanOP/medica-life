@@ -159,6 +159,7 @@
 @media only screen and (max-width: 1170px) {
   #best-medical-wrap {
     padding: 0 20px;
+    
   }
 }
 
@@ -166,6 +167,10 @@
   #best-medical-wrap {
     .best-medical {
       display: grid;
+
+      &-description {
+        max-width: 700px;
+      }
     }
   }
 }

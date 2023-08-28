@@ -116,6 +116,16 @@
       &-box {
         display: grid;
         justify-content: center;
+
+        &-card {
+          max-width: none;
+
+          &-img {
+            height: 20vh;
+            
+          
+          }
+        }
       }
     }
   }

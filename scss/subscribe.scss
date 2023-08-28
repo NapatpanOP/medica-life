@@ -97,3 +97,13 @@
     padding: 0 20px;
   }
 }
+
+@media only screen and (max-width: 900px) {
+  #subscribe-wrap {
+    .subscribe {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 3rem;
+    }
+  }
+}
