@@ -149,3 +149,17 @@
     }
   }
 }
+
+@media only screen and (max-width: 970px) {
+  #work-wrap {
+    .work {
+      padding-bottom: 170px;
+
+      &-img {
+        &-team {
+          right: 335px;
+        }
+      }
+    }
+  }
+}
