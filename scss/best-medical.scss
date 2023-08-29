@@ -170,6 +170,14 @@
 
       &-description {
         max-width: 700px;
+
+        h2 {
+          max-width: none;
+        }
+
+        p {
+          max-width: none;
+        }
       }
     }
   }

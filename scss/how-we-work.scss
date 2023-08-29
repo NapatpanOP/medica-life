@@ -5,7 +5,7 @@
 
   .work {
     display: flex;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     padding: 100px 0;
@@ -94,6 +94,7 @@
       max-width: 585px;
       position: relative;
       display: grid;
+      justify-items: right;
       // left: 6.4rem;
 
       &-group {
@@ -112,8 +113,9 @@
         border-width: 15px 15px 0px 0px;
         border-color: #FFFFFF;
         border-radius: 0px 5px 0px 5px;
-        margin-top: -187px;
-        margin-left: -90px;
+        position: absolute;
+        bottom: -70px;
+        right: 232px;
 
         img {
           width: 100%;

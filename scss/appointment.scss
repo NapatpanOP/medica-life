@@ -140,7 +140,7 @@
   }
 }
 
-@media only screen and (max-width: 1170px) {
+@media only screen and (max-width: 1169px) {
   #appointment-wrap {
     background: linear-gradient(0deg, rgba(255,255,255,1) 71%, rgba(0,10,49,1) 71%);
 
@@ -148,13 +148,8 @@
       justify-content: center;
 
       &-img {
-        // width: 80vw;
-        height: 50vh;
+        height: 80vh;
       }
-
-      // &-form {
-      //   width: 80vw;
-      // }
     }
   }
 }
