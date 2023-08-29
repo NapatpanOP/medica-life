@@ -122,8 +122,21 @@
 
           &-img {
             height: 40vh;
-            
-          
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 820px) {
+  #blog-wrap {
+
+    .blog {
+      &-box {
+        &-card {
+          &-img {
+            height: 20vh;
           }
         }
       }
