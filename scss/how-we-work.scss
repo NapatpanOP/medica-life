@@ -176,3 +176,62 @@
     }
   }
 }
+
+@media only screen and (max-width: 586px) {
+#work-wrap {
+    .work {
+
+      &-img {
+        &-team {
+          right: 260px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 496px) {
+  #work-wrap {
+    .work {
+      &-description {
+
+        &-process {
+          &-box {
+            gap: 1rem;
+          }
+        }
+        
+        &-process::before {
+          top: 20px;
+          bottom: 20px;
+        }
+      }
+
+      &-img {
+        &-team {
+          right: 220px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 381px) {
+  #work-wrap {
+    .work {
+      &-description {
+        
+        &-process::before {
+          top: 30px;
+          bottom: 30px;
+        }
+      }
+
+      &-img {
+        &-team {
+          right: 160px;
+        }
+      }
+    }
+  }
+}

@@ -227,3 +227,31 @@
     }
   }
 }
+
+@media only screen and (max-width: 586px) {
+  #landing-page {
+
+    .background-overlay {
+
+      .landing-wrap {
+        grid-template-columns: auto;
+
+        .landing {
+          h1 {
+            font-size: 40px;
+            line-height: 3rem;
+
+            span::after {
+              top: 115px;
+              width: 215px;
+            }
+          }
+
+          .audio-player {
+            right: 10px;
+          } 
+        }
+      }
+    }
+  }
+}

@@ -182,3 +182,15 @@
     }
   }
 }
+
+@media only screen and (max-width: 586px) {
+  #best-medical-wrap {
+    .best-medical {
+      display: grid;
+
+      &-box {
+        grid-template-columns: none;
+      }
+    }
+  }
+}

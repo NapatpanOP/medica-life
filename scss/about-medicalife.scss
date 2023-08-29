@@ -159,3 +159,15 @@
     }
   }
 }
+
+@media only screen and (max-width: 540px) {
+  #about-wrap {
+    .about {
+      &-description {
+        &-services {
+          grid-template-columns: auto;
+        }
+      }
+    }
+  }
+}

@@ -306,3 +306,21 @@
     }
   }
 }
+
+@media only screen and (max-width: 420px) {
+  #services-wrap {
+    .services {
+        &-appointment {
+          &-description {
+            &-btn {
+            display: grid;
+            
+            .btn-services {
+              justify-content: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}
