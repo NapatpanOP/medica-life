@@ -163,6 +163,13 @@
 @media only screen and (max-width: 540px) {
   #about-wrap {
     .about {
+      .img-medicalife {
+        max-width: none;
+
+        &-team {
+          width: none;
+        }
+      }
       &-description {
         &-services {
           grid-template-columns: auto;

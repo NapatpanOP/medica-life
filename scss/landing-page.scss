@@ -156,6 +156,7 @@
             span::after {
               top: 118px;
               width: 215px;
+              height: 15px;
             }
           }
 
@@ -196,6 +197,7 @@
             span::after {
               top: 100px;
               width: 162px;
+              height: 10px;
             }
           }
         }
@@ -214,8 +216,6 @@
       .landing-wrap {
         .landing {
           h1 {
-            font-size: 30px;
-            line-height: 2.5rem;
 
             span::after {
               top: 100px;
@@ -228,7 +228,7 @@
   }
 }
 
-@media only screen and (max-width: 586px) {
+@media only screen and (max-width: 610px) {
   #landing-page {
 
     .background-overlay {
@@ -250,6 +250,90 @@
           .audio-player {
             right: 10px;
           } 
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 416px) {
+  #landing-page {
+
+    .background-overlay {
+
+      .landing-wrap {
+
+        .landing {
+          h1 {
+            font-size: 35px;
+            line-height: 2.5rem;
+
+            span::after {
+              top: 100px;
+              width: 190px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  #landing-page {
+
+    .background-overlay {
+
+      .landing-wrap {
+
+        .landing {
+          h1 {
+
+            span::after {
+              right: 65px;
+              width: 190px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  #landing-page {
+
+    .background-overlay {
+
+      .landing-wrap {
+
+        .landing {
+          h1 {
+
+            span::after {
+              right: 60px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 348px) {
+  #landing-page {
+
+    .background-overlay {
+
+      .landing-wrap {
+
+        .landing {
+          h1 {
+
+            span::after {
+              top: 140px;
+            }
+          }
         }
       }
     }

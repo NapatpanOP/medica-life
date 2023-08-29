@@ -160,18 +160,6 @@
     .appointment {
 
       &-img {
-        height: 50vh;
-      }
-    }
-  }
-}
-
-@media only screen and (max-width: 715px) {
-  #appointment-wrap {
-
-    .appointment {
-
-      &-img {
         height: 70vh;
       }
     }
@@ -182,23 +170,8 @@
   #appointment-wrap {
     .appointment {      
       &-img {
-        width: 100%;
-        height: 70vh;
-      }
-
-      &-form {
-        width: 100%;
-      }
-    }
-  }
-}
-
-@media only screen and (max-width: 540px) {
-  #appointment-wrap {
-    .appointment {
-      
-      &-img {
         width: 90vw;
+        height: 70vh;
       }
 
       &-form {
