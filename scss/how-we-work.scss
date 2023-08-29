@@ -163,3 +163,16 @@
     }
   }
 }
+
+@media only screen and (max-width: 650px) {
+#work-wrap {
+    .work {
+
+      &-img {
+        &-team {
+          right: 300px;
+        }
+      }
+    }
+  }
+}
