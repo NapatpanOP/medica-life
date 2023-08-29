@@ -239,6 +239,7 @@
 
       &-box { 
         gap: 1.5rem;
+
         .grid {
           grid-column-start: 1;
           grid-column-end: 3;
@@ -284,6 +285,23 @@
         flex-wrap: wrap;
         justify-content: center;
         gap: 3rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 715px) {
+  #services-wrap {
+
+    .services {
+      max-width: none;
+      padding: 0 20px;
+
+      &-box {
+        &-column {
+          display: flex;
+          flex-direction: column;
+        }
       }
     }
   }

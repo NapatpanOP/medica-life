@@ -138,10 +138,10 @@
 
 @media only screen and (max-width: 970px) {
   #landing-page {
-    background-size: 90% auto;
+    background-size: contain;
 
     .background-overlay {
-      height: 70vh;
+      height: auto;
 
       .landing-wrap {
         .landing {
@@ -161,7 +161,7 @@
 
           .audio-player {
             padding: 30px;
-            bottom: -10px;
+            bottom: 10px;
             right: -20px;
           }
         }
@@ -172,16 +172,10 @@
 
 @media only screen and (max-width: 820px) {
   #landing-page {
-    background-size: 100% auto;
-
     .background-overlay {
-      height: 45vh;
-
       .landing-wrap {
         .landing {
           .audio-player {
-            padding: 30px;
-            bottom: 10px;
             right: -10px;
           } 
         }
@@ -190,3 +184,46 @@
   }
 }
 
+@media only screen and (max-width: 768px) {
+  #landing-page {
+    .background-overlay {
+      .landing-wrap {
+        .landing {
+          h1 {
+            font-size: 30px;
+            line-height: 2.5rem;
+
+            span::after {
+              top: 100px;
+              width: 162px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 715px) {
+  #landing-page {
+    background-size: cover;
+
+    .background-overlay {
+      height: 100%;
+
+      .landing-wrap {
+        .landing {
+          h1 {
+            font-size: 30px;
+            line-height: 2.5rem;
+
+            span::after {
+              top: 100px;
+              width: 162px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

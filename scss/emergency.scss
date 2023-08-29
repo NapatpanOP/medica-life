@@ -139,3 +139,15 @@
     }
   }
 }
+
+@media only screen and (max-width: 715px) {
+  #emergency-wrap {
+    padding: 0 20px;
+    max-width: none;
+
+    .emergency {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
