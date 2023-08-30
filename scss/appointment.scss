@@ -140,7 +140,7 @@
   }
 }
 
-@media only screen and (max-width: 1169px) {
+@media only screen and (max-width: 1170px) {
   #appointment-wrap {
     background: linear-gradient(0deg, rgba(255,255,255,1) 71%, rgba(0,10,49,1) 71%);
 
@@ -161,6 +161,12 @@
 
       &-img {
         height: 70vh;
+
+        &-overlay {
+          h3 {
+            font-size: 27px;
+          }
+        }
       }
     }
   }
@@ -180,6 +186,24 @@
         &-top {
           grid-template-columns: auto;
         }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  #appointment-wrap {
+    .appointment {      
+      &-img {
+        &-overlay {
+          p {
+            max-width: 340px;
+          }
+        }
+      }
+
+      &-form {
+        padding: 30px;
       }
     }
   }

@@ -99,7 +99,7 @@
   }
 }
 
-@media only screen and (max-width: 970px) {
+@media only screen and (max-width: 1020px) {
   #subscribe-wrap {
     .subscribe {
       flex-wrap: wrap;
@@ -115,6 +115,37 @@
         }
       }
 
+       &-input {
+        input {
+          width: 70vw;
+        }
+       }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #subscribe-wrap {
+    .subscribe {
+       &-input {
+        input {
+          width: 50vw;
+        }
+       }
+    }
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  #subscribe-wrap {
+    padding: 0 15px;
+
+    .subscribe {
+
+      &-description {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
        &-input {
         input {
           width: 50vw;

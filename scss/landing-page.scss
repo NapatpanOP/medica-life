@@ -136,7 +136,7 @@
   }
 }
 
-@media only screen and (max-width: 970px) {
+@media only screen and (max-width: 990px) {
   #landing-page {
     background-size: contain;
 
@@ -161,7 +161,7 @@
           }
 
           .audio-player {
-            padding: 30px;
+            padding: 20px;
             bottom: 10px;
             right: -20px;
           }
@@ -185,7 +185,7 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 786px) {
   #landing-page {
     .background-overlay {
       .landing-wrap {
@@ -238,12 +238,13 @@
 
         .landing {
           h1 {
-            font-size: 40px;
+            font-size: 35px;
+            max-width: 400px;
             line-height: 3rem;
 
             span::after {
-              top: 115px;
-              width: 215px;
+              top: 112px;
+              width: 190px;
             }
           }
 
@@ -256,7 +257,7 @@
   }
 }
 
-@media only screen and (max-width: 416px) {
+@media only screen and (max-width: 420px) {
   #landing-page {
 
     .background-overlay {
@@ -265,12 +266,12 @@
 
         .landing {
           h1 {
-            font-size: 35px;
+            font-size: 30px;
             line-height: 2.5rem;
 
             span::after {
               top: 100px;
-              width: 190px;
+              width: 163px;
             }
           }
         }
@@ -279,63 +280,63 @@
   }
 }
 
-@media only screen and (max-width: 380px) {
-  #landing-page {
+// @media only screen and (max-width: 380px) {
+//   #landing-page {
 
-    .background-overlay {
+//     .background-overlay {
 
-      .landing-wrap {
+//       .landing-wrap {
 
-        .landing {
-          h1 {
+//         .landing {
+//           h1 {
 
-            span::after {
-              right: 65px;
-              width: 190px;
-            }
-          }
-        }
-      }
-    }
-  }
-}
+//             span::after {
+//               right: 65px;
+//               width: 190px;
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
 
-@media only screen and (max-width: 375px) {
-  #landing-page {
+// @media only screen and (max-width: 375px) {
+//   #landing-page {
 
-    .background-overlay {
+//     .background-overlay {
 
-      .landing-wrap {
+//       .landing-wrap {
 
-        .landing {
-          h1 {
+//         .landing {
+//           h1 {
 
-            span::after {
-              right: 60px;
-            }
-          }
-        }
-      }
-    }
-  }
-}
+//             span::after {
+//               right: 60px;
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
 
-@media only screen and (max-width: 348px) {
-  #landing-page {
+// @media only screen and (max-width: 348px) {
+//   #landing-page {
 
-    .background-overlay {
+//     .background-overlay {
 
-      .landing-wrap {
+//       .landing-wrap {
 
-        .landing {
-          h1 {
+//         .landing {
+//           h1 {
 
-            span::after {
-              top: 140px;
-            }
-          }
-        }
-      }
-    }
-  }
-}
+//             span::after {
+//               top: 140px;
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
