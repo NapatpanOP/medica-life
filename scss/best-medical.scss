@@ -56,11 +56,12 @@
         border-radius: 50px;
         width: fit-content;
         height: fit-content;
+        transition: all .5s;
       }
 
       a:hover {
         transform: translateY(-8px);
-        transition: all .3s ease-out;
+        transition: all .5s ease-out;
       }
     }
 

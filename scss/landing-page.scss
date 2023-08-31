@@ -59,7 +59,7 @@
               line-height: 3.7rem;
               margin-bottom: 1.5rem;
               animation: slideInFromLeft 1s ease-in;
-    
+
               span::after {
                 content: "";
                 width: 270px;
@@ -90,11 +90,12 @@
               padding: 18px 40px;
               border-radius: 35px;
               animation: slideInFromLeft 1s ease-in;
+              transition: all .5s;
             }
     
             a:hover { 
               transform: translateY(-8px);
-              transition: all .3s ease-out;
+              transition: all .5s ease-out;
             }
           }
     

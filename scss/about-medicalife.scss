@@ -116,11 +116,12 @@
         border-radius: 50px;
         font-weight: 500;
         height: fit-content;
+        transition: all .5s;
       }
 
       .btn-about:hover {
         transform: translateY(-8px);
-        transition: all .3s ease-out;
+        transition: all .5s ease-out;
       }
     }
   }

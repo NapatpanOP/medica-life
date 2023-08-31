@@ -208,6 +208,7 @@
             padding: 18px 32px;
             border-radius: 50px;
             background: var(--secondary-color);
+            transition: all .5s;
           }
 
           .btn-services {
@@ -218,6 +219,7 @@
             font-size: 14px;
             font-weight: 500;
             gap: 1rem;
+            transition: all .5s;
             
             img {
               width: 13px;
@@ -226,7 +228,7 @@
 
           .btn-appointment:hover, .btn-services:hover {
             transform: translateY(-8px);
-            transition: all .3s ease-out;
+            transition: all .5s ease-out;
           }
         }
       }
