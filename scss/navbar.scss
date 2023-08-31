@@ -13,7 +13,7 @@
       color: #fff;
       background: var(--secondary-color);
       font-size: 35px;
-      z-index: 5;
+      z-index: 10;
       border-radius: 5px;
       cursor: pointer;
       display: none;
@@ -24,6 +24,18 @@
       display: flex;
       gap: 3rem;
       align-items: center;
+
+      &-logo {
+        display: none;
+
+        .logo {
+          max-width: 150px;
+
+          img {
+          width: 100%;
+        }
+        }
+      }
 
       .icon-arrow {
         width: 12px;
@@ -109,15 +121,51 @@
   #navbar {
 
     .nav {
-      
+      gap: 2rem;
+    
       #menu-icon {
         display: block;
+        z-index: 12;
       }
 
       &-menu {
-        // display: grid;
-        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: -100%;
+        max-width: 270px;
+        height: 120vh;
         display: none;
+        background: #fff;
+        padding: 180px 30px;
+        transition: 0.5s all;
+        margin-top: 20px;
+
+        &-logo {
+          display: block;
+          margin-top: 10px;
+        }
+
+        a {
+          display: block;
+          margin: 0;
+        }
+
+        a:hover {
+          color: var(--secondary-color);
+        }
+      }
+
+      .open {
+        left: 0;
+        z-index: 10;
+        display: grid;
+        height: fit-content;
+        gap: 1rem;
+      }
+
+      &-icons {
+        display: flex;
+        flex-wrap: wrap;
       }
     }
   }
