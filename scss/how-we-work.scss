@@ -178,31 +178,31 @@
   }
 }
 
-@media only screen and (max-width: 650px) {
-#work-wrap {
-    .work {
+// @media only screen and (max-width: 650px) {
+// #work-wrap {
+//     .work {
 
-      &-img {
-        &-team {
-          right: 300px;
-        }
-      }
-    }
-  }
-}
+//       &-img {
+//         &-team {
+//           right: 300px;
+//         }
+//       }
+//     }
+//   }
+// }
 
-@media only screen and (max-width: 586px) {
-#work-wrap {
-    .work {
+// @media only screen and (max-width: 586px) {
+// #work-wrap {
+//     .work {
 
-      &-img {
-        &-team {
-          right: 260px;
-        }
-      }
-    }
-  }
-}
+//       &-img {
+//         &-team {
+//           right: 260px;
+//         }
+//       }
+//     }
+//   }
+// }
 
 @media only screen and (max-width: 536px) {
   #work-wrap {
@@ -223,7 +223,7 @@
 
       &-img {
         &-team {
-          right: 220px;
+          right: 200px;
         }
       }
     }
@@ -261,6 +261,13 @@
       h2 {
         font-size: 24px;
         line-height: 2rem;
+      }
+
+      &-img {
+
+        &-team {
+          right: 160px;
+        }
       }
     }
   }
