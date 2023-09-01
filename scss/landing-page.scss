@@ -60,16 +60,20 @@
               margin-bottom: 1.5rem;
               animation: slideInFromLeft 1s ease-in;
 
-              span::after {
-                content: "";
-                width: 270px;
-                height: 15px;
-                background-color: #00DBC3;
-                position: absolute;
-                display: flex;
-                z-index: -1;
-                top: 163px;
-                margin: 0 auto;
+              // span::after {
+              //   content: "";
+              //   width: 270px;
+              //   height: 15px;
+              //   background-color: #00DBC3;
+              //   position: absolute;
+              //   display: flex;
+              //   z-index: -1;
+              //   top: 163px;
+              //   margin: 0 auto;
+              // }
+
+              span {
+                background-image: linear-gradient(180deg, #FFFFFF00 72%, #00E5CC 26%);
               }
             }
     
@@ -109,6 +113,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            animation: slideInFromRight 1s ease-in;
 
             &-circle {
               background-color: #FFFFFF;
@@ -179,12 +184,6 @@
           h1 {
             font-size: 40px;
             line-height: 3.2rem;
-            
-            span::after {
-              top: 118px;
-              width: 215px;
-              height: 15px;
-            }
           }
 
           .audio-player {
@@ -220,12 +219,6 @@
           h1 {
             font-size: 30px;
             line-height: 2.5rem;
-
-            span::after {
-              top: 100px;
-              width: 162px;
-              height: 10px;
-            }
           }
         }
       }
@@ -239,18 +232,6 @@
 
     .background-overlay {
       height: 100%;
-
-      .landing-wrap {
-        .landing {
-          h1 {
-
-            span::after {
-              top: 100px;
-              width: 162px;
-            }
-          }
-        }
-      }
     }
   }
 }
@@ -268,16 +249,11 @@
             font-size: 35px;
             max-width: 400px;
             line-height: 3rem;
-
-            span::after {
-              top: 112px;
-              width: 190px;
-            }
           }
 
           .audio-player {
-            right: 10px;
-          } 
+            display: none;
+          }
         }
       }
     }
@@ -295,11 +271,6 @@
           h1 {
             font-size: 30px;
             line-height: 2.5rem;
-
-            span::after {
-              top: 100px;
-              width: 163px;
-            }
           }
         }
       }

@@ -27,7 +27,7 @@
         font-size: 18px;
         font-weight: 500;
         color: var(--secondary-color);
-        animation: slideInFromLeft 1s ease-in;
+        animation: slideInFromLeft 8s ease-in;
       }
 
       h2 {
@@ -36,7 +36,7 @@
         font-weight: 600;
         line-height: 3rem;
         max-width: 510px;
-        animation: slideInFromBottom 1s ease-in;
+        animation: slideInFromBottom 8s ease-in;
       }
 
       p {
@@ -69,7 +69,7 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-gap: 1.5rem;
-      animation: slideInFromRight 1s ease-in;
+      animation: slideInFromRight 8s ease-in;
 
       .bg-color-white {
         background: #FFFFFF;

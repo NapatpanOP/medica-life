@@ -54,11 +54,9 @@
       
       &-column {
         display: flex;
-        // flex-wrap: wrap;
         gap: 2.5rem;
-        // height: 40vh;
         position: relative;
-        animation: slideInFromBottom 1s ease-in;
+        animation: slideInFromBottom 5s ease-in;
 
         .top {
           top: 2.5rem;
@@ -166,7 +164,7 @@
       align-items: center;
       border-top: 1px solid #EAEAEA;
       padding: 100px 0;
-      animation: slideInFromBottom 1s ease-in;
+      animation: slideInFromBottom 6s ease-in;
 
       &-description {
         display: flex;
