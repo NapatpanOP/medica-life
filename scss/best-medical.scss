@@ -147,7 +147,7 @@
         transform: scaleY(0);
         transform-origin: bottom;
         transition: transform 0.4s cubic-bezier(1.5, 1.6, 0.4, 0.7);
-        transition-timing-function: cubic-bezier(1.5, 1.6, 0.4, 0.7);
+        // transition-timing-function: cubic-bezier(1.5, 1.6, 0.4, 0.7);
         opacity: .4;
       }
 
@@ -160,7 +160,7 @@
   }
 }
 
-@media only screen and (max-width: 1170px) {
+@media only screen and (max-width: 1190px) {
   #best-medical-wrap {
     padding: 0 40px;
     
